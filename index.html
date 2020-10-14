@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Projeto em beta</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--linkando outras pastas-->
+        <link rel="stylesheet" href="CSS/formStyle.css">
+        <link rel="stylesheet" href="CSS/global.css">
+        <link rel="stylesheet" href="CSS/style.css">
+
+        <script>
+            function enviar_formulario(){
+                document.cadastrarUsuario.submit()
+            }
+        </script>
+    </head>
+    <body>
+        <!-- criando o form de cadastro-->
+        <form action="cadastrar.js"id="formulario" name="cadastarUsuario">
+        <h1>Cadastre-se</h1>
+        <div>
+            <div id="form">
+        <label for="newname">Nome:</label>
+        <input type="text" id="newId" placeholder="Escolha um nome" required="required" name="newname">
+        
+        <label for="email">Seu e-mail:</label>
+        <input type="email" id="email" placeholder="Digite seu e-mail" required="required" name="email">
+        
+        <label for="senha">Crie uma senha:</label>
+        <input type="password" id="senha" placeholder="Escolha uma senha" required="required" name="senha">
+        
+        <label for="sexo">Masculino</label>
+        <input type="radio" id="sexo" name="sexo">
+
+        <label for="sexo">Feminino</label>
+        <input type="radio" id="sexo" name="sexo">
+
+        <label for="sexo">Personalizado</label>
+        <input type="radio" id="sexo" name="sexo">
+
+        <a href="javascript:enviar_formulario()"><button type="submit">Cadastrar</button></div></a>
+          <!-- finalizando o form de cadastro--></div></form>
+
+          <h1 id="h1login">Já possui uma conta?</h1> </br>
+          <div>
+            <button id="buttonLogin">Login</button></a>
+        </div>  
+        
+    </body>
+</html>
